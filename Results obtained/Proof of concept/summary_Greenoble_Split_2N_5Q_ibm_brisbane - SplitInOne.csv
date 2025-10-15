@@ -1,0 +1,10 @@
+Iteration;Problem;QPU;Qubits;Searched;T_transp;T_exec;T_res;IBM_whole_time;IBM_usage_time;G_orig;G_transp;depth_orig;depth_transp;Mean_err;Job id;Algorithm;;SPLITINONE
+1;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;0.0612;0.8566;4.6124;2.854549;1;22;40;3;4;0.064941;d3f4c820uq0c73d4mss0;Greenoble SplitInOne;;
+2;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;0.0521;0.5447;4.6178;2.353544;1;22;40;3;4;0.063965;d3f4c99b641c738jto7g;Greenoble SplitInOne;;
+3;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;0.0546;0.6649;83.038;80.941935;1;22;40;3;4;0.069824;d3jr8eb4kkus738d07o0;Greenoble SplitInOne;;
+4;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;0.0613;1.274;6.0581;3.188913;1;22;40;3;4;0.073242;d3jr93hfk6qs73elsdeg;Greenoble SplitInOne;;
+5;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;0.0809;0.5361;4.5695;2.693224;1;22;40;3;4;0.062012;d3jr951fk6qs73elsdgg;Greenoble SplitInOne;;
+;;;;;;;;;;;;;;;;;;
+;;;;;0.06202;0.77526;20.57916;18.406433;1;22;40;3;4;0.0667968;0.9332;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;

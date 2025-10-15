@@ -1,0 +1,13 @@
+Iteration;Problem;QPU;Qubits;Searched;T_transp;T_exec;T_res;IBM_whole_time;IBM_usage_time;G_orig;G_transp;depth_orig;depth_transp;Mean_err;Job id;Algorithm
+1;Grover_4num_5Q;ibm_brisbane;5;4;0.322;0.5982;7.5124;6.340262;5;20;6352;12;3573;0.873179;d3d2u56dacis73dbf1hg;Grover
+2;Grover_4num_5Q;ibm_brisbane;5;4;0.2916;0.5893;8.3653;6.468618;5;20;6352;12;3573;0.871268;d3d2u7fc8jls73c0p88g;Grover
+3;Grover_4num_5Q;ibm_brisbane;5;4;0.3165;0.9519;7.3553;6.038655;5;20;6341;12;3566;0.877717;d3d2u9vc8jls73c0p8b0;Grover
+4;Grover_4num_5Q;ibm_brisbane;5;4;0.2922;0.6202;8.1392;6.36476;5;20;6350;12;3570;0.877478;d3d2ubs86mts73cchnfg;Grover
+5;Grover_4num_5Q;ibm_brisbane;5;4;0.2851;0.5944;7.9819;6.452642;5;20;6350;12;3570;0.874851;d3d2ue7c8jls73c0p8fg;Grover
+6;Grover_4num_5Q;ibm_brisbane;5;4;0.3288;0.6034;7.6396;6.442298;5;20;6352;12;3573;0.877239;d3d2ugmdacis73dbf1s0;Grover
+7;Grover_4num_5Q;ibm_brisbane;5;4;0.2829;0.5657;7.4059;6.212654;5;20;6352;12;3573;0.869119;d3d2uinc8jls73c0p8k0;Grover
+8;Grover_4num_5Q;ibm_brisbane;5;4;0.2819;0.5948;7.6251;6.165227;5;20;6350;12;3570;0.875328;d3d2uks86mts73cchnng;Grover
+9;Grover_4num_5Q;ibm_brisbane;5;4;0.3253;0.6005;7.8878;6.161798;5;20;6341;12;3566;0.872701;d3d2umudacis73dbf22g;Grover
+10;Grover_4num_5Q;ibm_brisbane;5;4;0.2919;0.6133;8.0784;6.444744;5;20;6352;12;3573;0.866969;d3d2up6dacis73dbf250;Grover
+;;;;;;;;;;;;;;;;
+;;;;;0.30182;0.63317;7.79909;6.3091658;5;20;6349.2;12;3570.7;0.8735849;;

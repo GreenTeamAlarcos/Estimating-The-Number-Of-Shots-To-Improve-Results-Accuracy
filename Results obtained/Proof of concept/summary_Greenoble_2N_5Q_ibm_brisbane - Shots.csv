@@ -1,0 +1,8 @@
+Iteration;Problem;QPU;Qubits;Searched;T_transp;T_exec;T_res;IBM_whole_time;IBM_usage_time;G_orig;G_transp;depth_orig;depth_transp;Mean_err;Job id;Algorithm;;SHOTS
+1;Greenoble_2num_5Q;ibm_brisbane;5;2;0.0604;0.518;4.6923;2.796332;2;11;132;3;92;0.815717;d3ahnofc8jls73doe260;Greenoble;;
+2;Greenoble_2num_5Q;ibm_brisbane;5;2;0.0605;0.7371;4.9243;3.546369;2;11;132;3;92;0.815324;d3ai2e6dacis73au6lgg;Greenoble;;
+3;Greenoble_2num_5Q;ibm_brisbane;5;2;0.0561;0.5149;4.8856;2.823394;2;11;125;3;84;0.849509;d3ahnr6lahfs739v2j9g;Greenoble;;
+4;Greenoble_2num_5Q;ibm_brisbane;5;2;0.0573;0.734;7.0664;2.828096;2;11;132;3;92;0.847544;d3ahspedacis73au6gag;Greenoble;;
+5;Greenoble_2num_5Q;ibm_brisbane;5;2;0.0388;0.5173;4.5758;2.788936;2;11;132;3;92;0.802358;d3ahsrc86mts73dtm7ig;Greenoble;;
+;;;;;;;;;;;;;;;;;;
+;;;;;0.05462;0.60426;5.22888;2.9566254;2;11;130.6;3;90.4;0.8260904;0.17391;;;

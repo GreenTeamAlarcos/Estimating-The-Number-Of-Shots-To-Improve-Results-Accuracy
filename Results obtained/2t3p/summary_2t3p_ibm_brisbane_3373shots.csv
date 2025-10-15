@@ -1,0 +1,13 @@
+Iteration;Problem;QPU;Qubits;Searched;T_transp;T_exec;T_res;IBM_whole_time;IBM_usage_time;G_orig;G_transp;depth_orig;depth_transp;Mean_err;Job id;Algorithm
+1;2t3p;ibm_brisbane;3;2;0.054;0.6166;4.7784;3.044669;2;12;26;6;11;0.052179;d39t1pcda4cs73ab9no0;2t3p
+2;2t3p;ibm_brisbane;3;2;0.0616;0.5063;4.5627;2.932068;2;12;26;6;11;0.054551;d39t1qsgenls73cgb3i0;2t3p
+3;2t3p;ibm_brisbane;3;2;0.0748;0.5207;5.0327;2.935321;2;12;26;6;11;0.053958;d39t1scgenls73cgb3jg;2t3p
+4;2t3p;ibm_brisbane;3;2;0.0673;0.5145;4.8699;3.189614;2;12;26;6;11;0.048028;d39t1toitjus73f8lrfg;2t3p
+5;2t3p;ibm_brisbane;3;2;0.0598;0.5215;4.6681;3.378412;2;12;26;6;11;0.053068;d39t1v8itjus73f8lrh0;2t3p
+6;2t3p;ibm_brisbane;3;2;0.0931;0.7427;4.2887;3.04695;2;12;26;6;11;0.045657;d39t20o0sqis739b2rq0;2t3p
+7;2t3p;ibm_brisbane;3;2;0.0734;0.5078;4.5693;3.083632;2;12;26;6;11;0.050993;d39t224da4cs73ab9o0g;2t3p
+8;2t3p;ibm_brisbane;3;2;0.1323;0.513;4.8942;3.174696;2;12;26;6;11;0.053958;d39t23cgenls73cgb3rg;2t3p
+9;2t3p;ibm_brisbane;3;2;0.0654;0.5007;4.7032;2.871587;2;12;26;6;11;0.049214;d39t24oitjus73f8lrmg;2t3p
+10;2t3p;ibm_brisbane;3;2;0.0652;0.4716;4.4403;2.77172;2;12;26;6;11;0.051883;d39t2680sqis739b2rvg;2t3p
+;;;;;;;;;;;;;;;;
+;;;;;0.07469;0.54154;4.68075;3.0428669;2;12;26;6;11;0.0513489;;

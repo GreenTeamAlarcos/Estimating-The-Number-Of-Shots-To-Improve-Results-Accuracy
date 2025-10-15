@@ -1,0 +1,770 @@
+Connected to backend: ibm_brisbane
+
+==================================================
+ITERATION 1/5 - SHOT OPTIMISATION ANALYSIS
+==================================================
+[DEBUG] The circuit has 5 measurement gates
+
+[INFO] Theoretical probabilities (noiseless):
+  00000: 0.2500
+  00001: 0.0000
+  00010: 0.0000
+  00011: 0.0000
+  00100: 0.0000
+  00101: 0.0000
+  00110: 0.0000
+  00111: 0.0000
+  01000: 0.0000
+  01001: 0.0000
+  01010: 0.0000
+  01011: 0.0000
+  01100: 0.0000
+  01101: 0.0000
+  01110: 0.2500
+  01111: 0.0000
+  10000: 0.0000
+  10001: 0.0000
+  10010: 0.0000
+  10011: 0.0000
+  10100: 0.0000
+  10101: 0.0000
+  10110: 0.0000
+  10111: 0.0000
+  11000: 0.0000
+  11001: 0.0000
+  11010: 0.0000
+  11011: 0.0000
+  11100: 0.0000
+  11101: 0.0000
+  11110: 0.2500
+  11111: 0.2500
+
+[INFO] Recommended theoretical shots (critical state) = 1876
+[DEBUG] Running simulation with 50000 shots...
+[DEBUG] Obtained counts: 32 different states
+
+[INFO] Probabilities (noisy simulation):
+  00000: 0.0559
+  00001: 0.0189
+  00010: 0.0409
+  00011: 0.0184
+  00100: 0.0400
+  00101: 0.0220
+  00110: 0.0384
+  00111: 0.0247
+  01000: 0.0306
+  01001: 0.0165
+  01010: 0.0374
+  01011: 0.0213
+  01100: 0.0376
+  01101: 0.0283
+  01110: 0.0527
+  01111: 0.0448
+  10000: 0.0105
+  10001: 0.0263
+  10010: 0.0132
+  10011: 0.0377
+  10100: 0.0156
+  10101: 0.0438
+  10110: 0.0207
+  10111: 0.0613
+  11000: 0.0094
+  11001: 0.0277
+  11010: 0.0136
+  11011: 0.0378
+  11100: 0.0158
+  11101: 0.0456
+  11110: 0.0225
+  11111: 0.0700
+[INFO] Using expected states defined in the circuit: ['00000', '01110', '01111', '11111']
+[INFO] Noise degradation analysis:
+   └─ Theoretically important states: 4
+   └─ Theoretical probability preserved: 0.7500
+   └─ Empirical probability preserved: 0.2234
+   └─ Degradation factor: 0.2979
+   └─ Probability dispersed into noise: 0.7766
+   └─ Dispersion ratio: 1.0354
+[INFO] Critical state selected from EXPECTED STATES: 11111
+[WARNING] Circuit with high noise degradation detected
+[INFO] Applying adaptive strategy for noisy circuits
+[INFO] Strategy for very noisy circuit:
+   └─ Amplification factor: 3.00
+   └─ Base block: 5000, amplified: 15000
+   └─ Increased number of samples: 90
+[INFO] Critical state: 11111 with p ≈ 0.0700
+[INFO] Block calculated = 15000, m = 90
+[DEBUG] Degradation correction factor: 3.36
+[DEBUG] Original k factor: 1.01, combined: 1.72
+[INFO] Complex quantum algorithm detected (p_crit < 0.3)
+[INFO] Applying empirical correction: 1.8x
+[DEBUG] Shots after empirical correction: 5807
+
+[DEBUG] Critical state selected: 11111 with p = 0.0700
+[DEBUG] Theoretical binomial variance (per block) = 4.337707e-06
+[DEBUG] Observed empirical variance (between blocks) = 4.369408e-06
+[DEBUG] Factor k = emp_var / binom_var = 1.01
+[DEBUG] Recommended theoretical shots = 1876
+[DEBUG] Adjusted shots = ceil(k * N_recommended_theoretical) = 5807
+
+RESULTS FOR ITERATION 1:
+   └─ Critical state detected: 11111 (p=0.0700)
+   └─ Correction factor k: 1.007
+   └─ Recommended theoretical shots: 1,876
+   └─ Noise-adjusted shots: 5,807
+   └─ Noise adjustment: +3,931 shots (+209.5%)
+
+OBSERVED PROBABILITIES (with hardware noise):
+    X 11111: 0.0700 (7.00%)
+      10111: 0.0613 (6.13%)
+      00000: 0.0559 (5.59%)
+      01110: 0.0527 (5.27%)
+      11101: 0.0456 (4.56%)
+      01111: 0.0448 (4.48%)
+      10101: 0.0438 (4.38%)
+      00010: 0.0409 (4.09%)
+      00100: 0.0400 (4.00%)
+      00110: 0.0384 (3.84%)
+      11011: 0.0378 (3.78%)
+      10011: 0.0377 (3.77%)
+      01100: 0.0376 (3.76%)
+      01010: 0.0374 (3.74%)
+      01000: 0.0306 (3.06%)
+      01101: 0.0283 (2.83%)
+      11001: 0.0277 (2.77%)
+      10001: 0.0263 (2.63%)
+      00111: 0.0247 (2.47%)
+      11110: 0.0225 (2.25%)
+      00101: 0.0220 (2.20%)
+      01011: 0.0213 (2.13%)
+      10110: 0.0207 (2.07%)
+      00001: 0.0189 (1.89%)
+      00011: 0.0184 (1.84%)
+      01001: 0.0165 (1.65%)
+      11100: 0.0158 (1.58%)
+      10100: 0.0156 (1.56%)
+      11010: 0.0136 (1.36%)
+      10010: 0.0132 (1.32%)
+      10000: 0.0105 (1.05%)
+      11000: 0.0094 (0.94%)
+
+INTERPRETATION:
+   └─ Minimal noise detected (k=1.01 ≈ 1.0)
+   └─ Theoretical shots are sufficient
+   └─ For error ≤ 1%, use 5,807 shots on real hardware
+
+==================================================
+ITERATION 2/5 - SHOT OPTIMISATION ANALYSIS
+==================================================
+[DEBUG] The circuit has 5 measurement gates
+
+[INFO] Theoretical probabilities (noiseless):
+  00000: 0.2500
+  00001: 0.0000
+  00010: 0.0000
+  00011: 0.0000
+  00100: 0.0000
+  00101: 0.0000
+  00110: 0.0000
+  00111: 0.0000
+  01000: 0.0000
+  01001: 0.0000
+  01010: 0.0000
+  01011: 0.0000
+  01100: 0.0000
+  01101: 0.0000
+  01110: 0.2500
+  01111: 0.0000
+  10000: 0.0000
+  10001: 0.0000
+  10010: 0.0000
+  10011: 0.0000
+  10100: 0.0000
+  10101: 0.0000
+  10110: 0.0000
+  10111: 0.0000
+  11000: 0.0000
+  11001: 0.0000
+  11010: 0.0000
+  11011: 0.0000
+  11100: 0.0000
+  11101: 0.0000
+  11110: 0.2500
+  11111: 0.2500
+
+[INFO] Recommended theoretical shots (critical state) = 1876
+[DEBUG] Running simulation with 50000 shots...
+[DEBUG] Obtained counts: 32 different states
+
+[INFO] Probabilities (noisy simulation):
+  00000: 0.0557
+  00001: 0.0203
+  00010: 0.0395
+  00011: 0.0187
+  00100: 0.0404
+  00101: 0.0237
+  00110: 0.0377
+  00111: 0.0237
+  01000: 0.0321
+  01001: 0.0158
+  01010: 0.0373
+  01011: 0.0218
+  01100: 0.0388
+  01101: 0.0268
+  01110: 0.0550
+  01111: 0.0437
+  10000: 0.0108
+  10001: 0.0268
+  10010: 0.0132
+  10011: 0.0375
+  10100: 0.0159
+  10101: 0.0433
+  10110: 0.0220
+  10111: 0.0629
+  11000: 0.0097
+  11001: 0.0264
+  11010: 0.0125
+  11011: 0.0387
+  11100: 0.0148
+  11101: 0.0442
+  11110: 0.0220
+  11111: 0.0685
+[INFO] Using expected states defined in the circuit: ['00000', '01110', '01111', '11111']
+[INFO] Noise degradation analysis:
+   └─ Theoretically important states: 4
+   └─ Theoretical probability preserved: 0.7500
+   └─ Empirical probability preserved: 0.2230
+   └─ Degradation factor: 0.2973
+   └─ Probability dispersed into noise: 0.7770
+   └─ Dispersion ratio: 1.0361
+[INFO] Critical state selected from EXPECTED STATES: 11111
+[WARNING] Circuit with high noise degradation detected
+[INFO] Applying adaptive strategy for noisy circuits
+[INFO] Strategy for very noisy circuit:
+   └─ Amplification factor: 3.00
+   └─ Base block: 5000, amplified: 15000
+   └─ Increased number of samples: 90
+[INFO] Critical state: 11111 with p ≈ 0.0685
+[INFO] Block calculated = 15000, m = 90
+[DEBUG] Degradation correction factor: 3.36
+[DEBUG] Original k factor: 1.04, combined: 1.78
+[INFO] Complex quantum algorithm detected (p_crit < 0.3)
+[INFO] Applying empirical correction: 1.8x
+[DEBUG] Shots after empirical correction: 6016
+
+[DEBUG] Critical state selected: 11111 with p = 0.0685
+[DEBUG] Theoretical binomial variance (per block) = 4.255001e-06
+[DEBUG] Observed empirical variance (between blocks) = 4.434448e-06
+[DEBUG] Factor k = emp_var / binom_var = 1.04
+[DEBUG] Recommended theoretical shots = 1876
+[DEBUG] Adjusted shots = ceil(k * N_recommended_theoretical) = 6016
+
+RESULTS FOR ITERATION 2:
+   └─ Critical state detected: 11111 (p=0.0685)
+   └─ Correction factor k: 1.042
+   └─ Recommended theoretical shots: 1,876
+   └─ Noise-adjusted shots: 6,016
+   └─ Noise adjustment: +4,140 shots (+220.7%)
+
+OBSERVED PROBABILITIES (with hardware noise):
+    X 11111: 0.0685 (6.85%)
+      10111: 0.0629 (6.29%)
+      00000: 0.0557 (5.57%)
+      01110: 0.0550 (5.50%)
+      11101: 0.0442 (4.42%)
+      01111: 0.0437 (4.37%)
+      10101: 0.0433 (4.33%)
+      00100: 0.0404 (4.04%)
+      00010: 0.0395 (3.95%)
+      01100: 0.0388 (3.88%)
+      11011: 0.0387 (3.87%)
+      00110: 0.0377 (3.77%)
+      10011: 0.0375 (3.75%)
+      01010: 0.0373 (3.73%)
+      01000: 0.0321 (3.21%)
+      10001: 0.0268 (2.68%)
+      01101: 0.0268 (2.68%)
+      11001: 0.0264 (2.64%)
+      00101: 0.0237 (2.37%)
+      00111: 0.0237 (2.37%)
+      11110: 0.0220 (2.20%)
+      10110: 0.0220 (2.20%)
+      01011: 0.0218 (2.18%)
+      00001: 0.0203 (2.03%)
+      00011: 0.0187 (1.87%)
+      10100: 0.0159 (1.59%)
+      01001: 0.0158 (1.58%)
+      11100: 0.0148 (1.48%)
+      10010: 0.0132 (1.32%)
+      11010: 0.0125 (1.25%)
+      10000: 0.0108 (1.08%)
+      11000: 0.0097 (0.97%)
+
+INTERPRETATION:
+   └─ Minimal noise detected (k=1.04 ≈ 1.0)
+   └─ Theoretical shots are sufficient
+   └─ For error ≤ 1%, use 6,016 shots on real hardware
+
+==================================================
+ITERATION 3/5 - SHOT OPTIMISATION ANALYSIS
+==================================================
+[DEBUG] The circuit has 5 measurement gates
+
+[INFO] Theoretical probabilities (noiseless):
+  00000: 0.2500
+  00001: 0.0000
+  00010: 0.0000
+  00011: 0.0000
+  00100: 0.0000
+  00101: 0.0000
+  00110: 0.0000
+  00111: 0.0000
+  01000: 0.0000
+  01001: 0.0000
+  01010: 0.0000
+  01011: 0.0000
+  01100: 0.0000
+  01101: 0.0000
+  01110: 0.2500
+  01111: 0.0000
+  10000: 0.0000
+  10001: 0.0000
+  10010: 0.0000
+  10011: 0.0000
+  10100: 0.0000
+  10101: 0.0000
+  10110: 0.0000
+  10111: 0.0000
+  11000: 0.0000
+  11001: 0.0000
+  11010: 0.0000
+  11011: 0.0000
+  11100: 0.0000
+  11101: 0.0000
+  11110: 0.2500
+  11111: 0.2500
+
+[INFO] Recommended theoretical shots (critical state) = 1876
+[DEBUG] Running simulation with 50000 shots...
+[DEBUG] Obtained counts: 32 different states
+
+[INFO] Probabilities (noisy simulation):
+  00000: 0.0559
+  00001: 0.0204
+  00010: 0.0402
+  00011: 0.0187
+  00100: 0.0395
+  00101: 0.0243
+  00110: 0.0374
+  00111: 0.0238
+  01000: 0.0305
+  01001: 0.0157
+  01010: 0.0372
+  01011: 0.0219
+  01100: 0.0375
+  01101: 0.0286
+  01110: 0.0540
+  01111: 0.0438
+  10000: 0.0100
+  10001: 0.0269
+  10010: 0.0122
+  10011: 0.0361
+  10100: 0.0160
+  10101: 0.0428
+  10110: 0.0218
+  10111: 0.0630
+  11000: 0.0097
+  11001: 0.0267
+  11010: 0.0135
+  11011: 0.0382
+  11100: 0.0153
+  11101: 0.0461
+  11110: 0.0228
+  11111: 0.0695
+[INFO] Using expected states defined in the circuit: ['00000', '01110', '01111', '11111']
+[INFO] Noise degradation analysis:
+   └─ Theoretically important states: 4
+   └─ Theoretical probability preserved: 0.7500
+   └─ Empirical probability preserved: 0.2232
+   └─ Degradation factor: 0.2976
+   └─ Probability dispersed into noise: 0.7768
+   └─ Dispersion ratio: 1.0357
+[INFO] Critical state selected from EXPECTED STATES: 11111
+[WARNING] Circuit with high noise degradation detected
+[INFO] Applying adaptive strategy for noisy circuits
+[INFO] Strategy for very noisy circuit:
+   └─ Amplification factor: 3.00
+   └─ Base block: 5000, amplified: 15000
+   └─ Increased number of samples: 90
+[INFO] Critical state: 11111 with p ≈ 0.0695
+[INFO] Block calculated = 15000, m = 90
+[DEBUG] Degradation correction factor: 3.36
+[DEBUG] Original k factor: 1.00, combined: 1.71
+[INFO] Complex quantum algorithm detected (p_crit < 0.3)
+[INFO] Applying empirical correction: 1.8x
+[DEBUG] Shots after empirical correction: 5769
+
+[DEBUG] Critical state selected: 11111 with p = 0.0695
+[DEBUG] Theoretical binomial variance (per block) = 4.310169e-06
+[DEBUG] Observed empirical variance (between blocks) = 4.099875e-06
+[DEBUG] Factor k = emp_var / binom_var = 1.00
+[DEBUG] Recommended theoretical shots = 1876
+[DEBUG] Adjusted shots = ceil(k * N_recommended_theoretical) = 5769
+
+RESULTS FOR ITERATION 3:
+   └─ Critical state detected: 11111 (p=0.0695)
+   └─ Correction factor k: 1.000
+   └─ Recommended theoretical shots: 1,876
+   └─ Noise-adjusted shots: 5,769
+   └─ Noise adjustment: +3,893 shots (+207.5%)
+
+OBSERVED PROBABILITIES (with hardware noise):
+    X 11111: 0.0695 (6.95%)
+      10111: 0.0630 (6.30%)
+      00000: 0.0559 (5.59%)
+      01110: 0.0540 (5.40%)
+      11101: 0.0461 (4.61%)
+      01111: 0.0438 (4.38%)
+      10101: 0.0428 (4.28%)
+      00010: 0.0402 (4.02%)
+      00100: 0.0395 (3.95%)
+      11011: 0.0382 (3.82%)
+      01100: 0.0375 (3.75%)
+      00110: 0.0374 (3.74%)
+      01010: 0.0372 (3.72%)
+      10011: 0.0361 (3.61%)
+      01000: 0.0305 (3.05%)
+      01101: 0.0286 (2.86%)
+      10001: 0.0269 (2.69%)
+      11001: 0.0267 (2.67%)
+      00101: 0.0243 (2.43%)
+      00111: 0.0238 (2.38%)
+      11110: 0.0228 (2.28%)
+      01011: 0.0219 (2.19%)
+      10110: 0.0218 (2.18%)
+      00001: 0.0204 (2.04%)
+      00011: 0.0187 (1.87%)
+      10100: 0.0160 (1.60%)
+      01001: 0.0157 (1.57%)
+      11100: 0.0153 (1.53%)
+      11010: 0.0135 (1.35%)
+      10010: 0.0122 (1.22%)
+      10000: 0.0100 (1.00%)
+      11000: 0.0097 (0.97%)
+
+INTERPRETATION:
+   └─ Minimal noise detected (k=1.00 ≈ 1.0)
+   └─ Theoretical shots are sufficient
+   └─ For error ≤ 1%, use 5,769 shots on real hardware
+
+==================================================
+ITERATION 4/5 - SHOT OPTIMISATION ANALYSIS
+==================================================
+[DEBUG] The circuit has 5 measurement gates
+
+[INFO] Theoretical probabilities (noiseless):
+  00000: 0.2500
+  00001: 0.0000
+  00010: 0.0000
+  00011: 0.0000
+  00100: 0.0000
+  00101: 0.0000
+  00110: 0.0000
+  00111: 0.0000
+  01000: 0.0000
+  01001: 0.0000
+  01010: 0.0000
+  01011: 0.0000
+  01100: 0.0000
+  01101: 0.0000
+  01110: 0.2500
+  01111: 0.0000
+  10000: 0.0000
+  10001: 0.0000
+  10010: 0.0000
+  10011: 0.0000
+  10100: 0.0000
+  10101: 0.0000
+  10110: 0.0000
+  10111: 0.0000
+  11000: 0.0000
+  11001: 0.0000
+  11010: 0.0000
+  11011: 0.0000
+  11100: 0.0000
+  11101: 0.0000
+  11110: 0.2500
+  11111: 0.2500
+
+[INFO] Recommended theoretical shots (critical state) = 1876
+[DEBUG] Running simulation with 50000 shots...
+[DEBUG] Obtained counts: 32 different states
+
+[INFO] Probabilities (noisy simulation):
+  00000: 0.0558
+  00001: 0.0200
+  00010: 0.0386
+  00011: 0.0191
+  00100: 0.0406
+  00101: 0.0233
+  00110: 0.0370
+  00111: 0.0245
+  01000: 0.0304
+  01001: 0.0158
+  01010: 0.0361
+  01011: 0.0222
+  01100: 0.0362
+  01101: 0.0270
+  01110: 0.0558
+  01111: 0.0439
+  10000: 0.0105
+  10001: 0.0261
+  10010: 0.0136
+  10011: 0.0398
+  10100: 0.0154
+  10101: 0.0441
+  10110: 0.0219
+  10111: 0.0630
+  11000: 0.0102
+  11001: 0.0278
+  11010: 0.0132
+  11011: 0.0387
+  11100: 0.0143
+  11101: 0.0464
+  11110: 0.0227
+  11111: 0.0659
+[INFO] Using expected states defined in the circuit: ['00000', '01110', '01111', '11111']
+[INFO] Noise degradation analysis:
+   └─ Theoretically important states: 4
+   └─ Theoretical probability preserved: 0.7500
+   └─ Empirical probability preserved: 0.2214
+   └─ Degradation factor: 0.2951
+   └─ Probability dispersed into noise: 0.7786
+   └─ Dispersion ratio: 1.0382
+[INFO] Critical state selected from EXPECTED STATES: 11111
+[WARNING] Circuit with high noise degradation detected
+[INFO] Applying adaptive strategy for noisy circuits
+[INFO] Strategy for very noisy circuit:
+   └─ Amplification factor: 3.00
+   └─ Base block: 5000, amplified: 15000
+   └─ Increased number of samples: 90
+[INFO] Critical state: 11111 with p ≈ 0.0659
+[INFO] Block calculated = 15000, m = 90
+[DEBUG] Degradation correction factor: 3.39
+[DEBUG] Original k factor: 1.05, combined: 1.81
+[INFO] Complex quantum algorithm detected (p_crit < 0.3)
+[INFO] Applying empirical correction: 1.8x
+[DEBUG] Shots after empirical correction: 6104
+
+[DEBUG] Critical state selected: 11111 with p = 0.0659
+[DEBUG] Theoretical binomial variance (per block) = 4.104970e-06
+[DEBUG] Observed empirical variance (between blocks) = 4.322517e-06
+[DEBUG] Factor k = emp_var / binom_var = 1.05
+[DEBUG] Recommended theoretical shots = 1876
+[DEBUG] Adjusted shots = ceil(k * N_recommended_theoretical) = 6104
+
+RESULTS FOR ITERATION 4:
+   └─ Critical state detected: 11111 (p=0.0659)
+   └─ Correction factor k: 1.053
+   └─ Recommended theoretical shots: 1,876
+   └─ Noise-adjusted shots: 6,104
+   └─ Noise adjustment: +4,228 shots (+225.4%)
+
+OBSERVED PROBABILITIES (with hardware noise):
+    X 11111: 0.0659 (6.59%)
+      10111: 0.0630 (6.30%)
+      01110: 0.0558 (5.58%)
+      00000: 0.0558 (5.58%)
+      11101: 0.0464 (4.64%)
+      10101: 0.0441 (4.41%)
+      01111: 0.0439 (4.39%)
+      00100: 0.0406 (4.06%)
+      10011: 0.0398 (3.98%)
+      11011: 0.0387 (3.87%)
+      00010: 0.0386 (3.86%)
+      00110: 0.0370 (3.70%)
+      01100: 0.0362 (3.62%)
+      01010: 0.0361 (3.61%)
+      01000: 0.0304 (3.04%)
+      11001: 0.0278 (2.78%)
+      01101: 0.0270 (2.70%)
+      10001: 0.0261 (2.61%)
+      00111: 0.0245 (2.45%)
+      00101: 0.0233 (2.33%)
+      11110: 0.0227 (2.27%)
+      01011: 0.0222 (2.22%)
+      10110: 0.0219 (2.19%)
+      00001: 0.0200 (2.00%)
+      00011: 0.0191 (1.91%)
+      01001: 0.0158 (1.58%)
+      10100: 0.0154 (1.54%)
+      11100: 0.0143 (1.43%)
+      10010: 0.0136 (1.36%)
+      11010: 0.0132 (1.32%)
+      10000: 0.0105 (1.05%)
+      11000: 0.0102 (1.02%)
+
+INTERPRETATION:
+   └─ Moderate noise impact (k=1.05)
+   └─ Moderate adjustment: +225.4% shots
+   └─ For error ≤ 1%, use 6,104 shots on real hardware
+
+==================================================
+ITERATION 5/5 - SHOT OPTIMISATION ANALYSIS
+==================================================
+[DEBUG] The circuit has 5 measurement gates
+
+[INFO] Theoretical probabilities (noiseless):
+  00000: 0.2500
+  00001: 0.0000
+  00010: 0.0000
+  00011: 0.0000
+  00100: 0.0000
+  00101: 0.0000
+  00110: 0.0000
+  00111: 0.0000
+  01000: 0.0000
+  01001: 0.0000
+  01010: 0.0000
+  01011: 0.0000
+  01100: 0.0000
+  01101: 0.0000
+  01110: 0.2500
+  01111: 0.0000
+  10000: 0.0000
+  10001: 0.0000
+  10010: 0.0000
+  10011: 0.0000
+  10100: 0.0000
+  10101: 0.0000
+  10110: 0.0000
+  10111: 0.0000
+  11000: 0.0000
+  11001: 0.0000
+  11010: 0.0000
+  11011: 0.0000
+  11100: 0.0000
+  11101: 0.0000
+  11110: 0.2500
+  11111: 0.2500
+
+[INFO] Recommended theoretical shots (critical state) = 1876
+[DEBUG] Running simulation with 50000 shots...
+[DEBUG] Obtained counts: 32 different states
+
+[INFO] Probabilities (noisy simulation):
+  00000: 0.0561
+  00001: 0.0202
+  00010: 0.0409
+  00011: 0.0208
+  00100: 0.0396
+  00101: 0.0245
+  00110: 0.0376
+  00111: 0.0242
+  01000: 0.0314
+  01001: 0.0149
+  01010: 0.0351
+  01011: 0.0228
+  01100: 0.0363
+  01101: 0.0269
+  01110: 0.0547
+  01111: 0.0450
+  10000: 0.0105
+  10001: 0.0271
+  10010: 0.0134
+  10011: 0.0383
+  10100: 0.0160
+  10101: 0.0422
+  10110: 0.0216
+  10111: 0.0629
+  11000: 0.0101
+  11001: 0.0270
+  11010: 0.0129
+  11011: 0.0387
+  11100: 0.0146
+  11101: 0.0443
+  11110: 0.0217
+  11111: 0.0676
+[INFO] Using expected states defined in the circuit: ['00000', '01110', '01111', '11111']
+[INFO] Noise degradation analysis:
+   └─ Theoretically important states: 4
+   └─ Theoretical probability preserved: 0.7500
+   └─ Empirical probability preserved: 0.2234
+   └─ Degradation factor: 0.2979
+   └─ Probability dispersed into noise: 0.7766
+   └─ Dispersion ratio: 1.0354
+[INFO] Critical state selected from EXPECTED STATES: 11111
+[WARNING] Circuit with high noise degradation detected
+[INFO] Applying adaptive strategy for noisy circuits
+[INFO] Strategy for very noisy circuit:
+   └─ Amplification factor: 3.00
+   └─ Base block: 5000, amplified: 15000
+   └─ Increased number of samples: 90
+[INFO] Critical state: 11111 with p ≈ 0.0676
+[INFO] Block calculated = 15000, m = 90
+[DEBUG] Degradation correction factor: 3.36
+[DEBUG] Original k factor: 1.00, combined: 1.71
+[INFO] Complex quantum algorithm detected (p_crit < 0.3)
+[INFO] Applying empirical correction: 1.8x
+[DEBUG] Shots after empirical correction: 5766
+
+[DEBUG] Critical state selected: 11111 with p = 0.0676
+[DEBUG] Theoretical binomial variance (per block) = 4.199710e-06
+[DEBUG] Observed empirical variance (between blocks) = 3.534997e-06
+[DEBUG] Factor k = emp_var / binom_var = 1.00
+[DEBUG] Recommended theoretical shots = 1876
+[DEBUG] Adjusted shots = ceil(k * N_recommended_theoretical) = 5766
+
+RESULTS FOR ITERATION 5:
+   └─ Critical state detected: 11111 (p=0.0676)
+   └─ Correction factor k: 1.000
+   └─ Recommended theoretical shots: 1,876
+   └─ Noise-adjusted shots: 5,766
+   └─ Noise adjustment: +3,890 shots (+207.4%)
+
+OBSERVED PROBABILITIES (with hardware noise):
+    X 11111: 0.0676 (6.76%)
+      10111: 0.0629 (6.29%)
+      00000: 0.0561 (5.61%)
+      01110: 0.0547 (5.47%)
+      01111: 0.0450 (4.50%)
+      11101: 0.0443 (4.43%)
+      10101: 0.0422 (4.22%)
+      00010: 0.0409 (4.09%)
+      00100: 0.0396 (3.96%)
+      11011: 0.0387 (3.87%)
+      10011: 0.0383 (3.83%)
+      00110: 0.0376 (3.76%)
+      01100: 0.0363 (3.63%)
+      01010: 0.0351 (3.51%)
+      01000: 0.0314 (3.14%)
+      10001: 0.0271 (2.71%)
+      11001: 0.0270 (2.70%)
+      01101: 0.0269 (2.69%)
+      00101: 0.0245 (2.45%)
+      00111: 0.0242 (2.42%)
+      01011: 0.0228 (2.28%)
+      11110: 0.0217 (2.17%)
+      10110: 0.0216 (2.16%)
+      00011: 0.0208 (2.08%)
+      00001: 0.0202 (2.02%)
+      10100: 0.0160 (1.60%)
+      01001: 0.0149 (1.49%)
+      11100: 0.0146 (1.46%)
+      10010: 0.0134 (1.34%)
+      11010: 0.0129 (1.29%)
+      10000: 0.0105 (1.05%)
+      11000: 0.0101 (1.01%)
+
+INTERPRETATION:
+   └─ Minimal noise detected (k=1.00 ≈ 1.0)
+   └─ Theoretical shots are sufficient
+   └─ For error ≤ 1%, use 5,766 shots on real hardware
+
+============================================================
+STATISTICAL SUMMARY OF SHOT OPTIMISATION ANALYSIS
+============================================================
+Average theoretical shots: 1876 (min=1876, max=1876)
+Average adjusted shots: 5892 (min=5766, max=6104)
+Average k factor: 1.02 (std dev = 0.02)
+Improvement from adjustment: 214.1%
+============================================================

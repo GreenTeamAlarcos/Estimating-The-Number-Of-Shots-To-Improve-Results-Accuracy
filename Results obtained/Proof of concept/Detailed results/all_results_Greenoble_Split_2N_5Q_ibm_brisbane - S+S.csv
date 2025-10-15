@@ -1,0 +1,11 @@
+Iter;Problem;QPU;Qubits;Searched;Dec;Bin;Expected;Obtained;Error
+1;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;0;'00000;2;2;0
+1;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;31;'11111;2;2;0
+2;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;0;'00000;2;2;0
+2;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;31;'11111;2;2;0
+3;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;0;'00000;2;2;0
+3;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;31;'11111;2;2;0
+4;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;0;'00000;2;2;0
+4;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;31;'11111;2;2;0
+5;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;0;'00000;2;2;0
+5;Greenoble_Split_5Q_2N;ibm_brisbane;5;2;31;'11111;2;2;0

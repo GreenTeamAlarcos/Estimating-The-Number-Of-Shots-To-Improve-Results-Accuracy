@@ -1,0 +1,280 @@
+Connected to backend: ibm_brisbane
+
+==================================================
+REPETITION 1/5 - SHOT OPTIMISATION ANALYSIS
+==================================================
+[DEBUG] The circuit has 3 measurement gates
+
+[INFO] Theoretical probabilities (without noise):
+  011: 0.5000
+  100: 0.5000
+
+[INFO] Recommended theoretical shots (critical state) = 2500
+[DEBUG] Executing simulation with 50000 shots...
+[DEBUG] Obtained counts: 8 different states
+
+[INFO] Probabilities (noisy simulation):
+  000: 0.0098
+  001: 0.0087
+  010: 0.0072
+  011: 0.4779
+  100: 0.4739
+  101: 0.0064
+  110: 0.0077
+  111: 0.0084
+[INFO] Critical state: 011 with p ≈ 0.4779
+[INFO] Calculated block = 2496, m = 51
+
+[DEBUG] Selected critical state: 011 with p = 0.4779
+[DEBUG] Theoretical binomial variance (per block) = 9.996458e-05
+[DEBUG] Observed empirical variance (between blocks) = 1.038801e-04
+[DEBUG] Factor k = emp_var / binom_var = 1.04
+[DEBUG] Recommended theoretical shots = 2500
+[DEBUG] Adjusted shots = ceil(k * N_recommended_theoretical) = 2598
+
+RESULTS FROM REPETITION 1:
+   └─ Critical state detected: 011 (p=0.4779)
+   └─ Correction factor k: 1.039
+   └─ Recommended theoretical shots: 2,500
+   └─ Noise-adjusted shots: 2,598
+   └─ Noise adjustment: +98 shots (+3.9%)
+
+OBSERVED PROBABILITIES (with hardware noise):
+    X 011: 0.4779 (47.79%)
+      100: 0.4739 (47.39%)
+      000: 0.0098 (0.98%)
+      001: 0.0087 (0.87%)
+      111: 0.0084 (0.84%)
+      110: 0.0077 (0.77%)
+      010: 0.0072 (0.72%)
+      101: 0.0064 (0.64%)
+
+INTERPRETATION:
+   └─ Minimal noise detected (k=1.04 ≈ 1.0)
+   └─ Theoretical shots are sufficient
+   └─ For error ≤ 1%, use 2,598 shots on real hardware
+
+==================================================
+REPETITION 2/5 - SHOT OPTIMISATION ANALYSIS
+==================================================
+[DEBUG] The circuit has 3 measurement gates
+
+[INFO] Theoretical probabilities (without noise):
+  011: 0.5000
+  100: 0.5000
+
+[INFO] Recommended theoretical shots (critical state) = 2500
+[DEBUG] Executing simulation with 50000 shots...
+[DEBUG] Obtained counts: 8 different states
+
+[INFO] Probabilities (noisy simulation):
+  000: 0.0099
+  001: 0.0092
+  010: 0.0066
+  011: 0.4748
+  100: 0.4769
+  101: 0.0065
+  110: 0.0077
+  111: 0.0084
+[INFO] Critical state: 100 with p ≈ 0.4769
+[INFO] Calculated block = 2495, m = 51
+
+[DEBUG] Selected critical state: 100 with p = 0.4769
+[DEBUG] Theoretical binomial variance (per block) = 9.998616e-05
+[DEBUG] Observed empirical variance (between blocks) = 1.030384e-04
+[DEBUG] Factor k = emp_var / binom_var = 1.03
+[DEBUG] Recommended theoretical shots = 2500
+[DEBUG] Adjusted shots = ceil(k * N_recommended_theoretical) = 2577
+
+RESULTS FROM REPETITION 2:
+   └─ Critical state detected: 100 (p=0.4769)
+   └─ Correction factor k: 1.031
+   └─ Recommended theoretical shots: 2,500
+   └─ Noise-adjusted shots: 2,577
+   └─ Noise adjustment: +77 shots (+3.1%)
+
+OBSERVED PROBABILITIES (with hardware noise):
+    X 100: 0.4769 (47.69%)
+      011: 0.4748 (47.48%)
+      000: 0.0099 (0.99%)
+      001: 0.0092 (0.92%)
+      111: 0.0084 (0.84%)
+      110: 0.0077 (0.77%)
+      010: 0.0066 (0.66%)
+      101: 0.0065 (0.65%)
+
+INTERPRETATION:
+   └─ Minimal noise detected (k=1.03 ≈ 1.0)
+   └─ Theoretical shots are sufficient
+   └─ For error ≤ 1%, use 2,577 shots on real hardware
+
+==================================================
+REPETITION 3/5 - SHOT OPTIMISATION ANALYSIS
+==================================================
+[DEBUG] The circuit has 3 measurement gates
+
+[INFO] Theoretical probabilities (without noise):
+  011: 0.5000
+  100: 0.5000
+
+[INFO] Recommended theoretical shots (critical state) = 2500
+[DEBUG] Executing simulation with 50000 shots...
+[DEBUG] Obtained counts: 8 different states
+
+[INFO] Probabilities (noisy simulation):
+  000: 0.0092
+  001: 0.0095
+  010: 0.0070
+  011: 0.4765
+  100: 0.4753
+  101: 0.0072
+  110: 0.0071
+  111: 0.0084
+[INFO] Critical state: 011 with p ≈ 0.4765
+[INFO] Calculated block = 2495, m = 51
+
+[DEBUG] Selected critical state: 011 with p = 0.4765
+[DEBUG] Theoretical binomial variance (per block) = 9.997943e-05
+[DEBUG] Observed empirical variance (between blocks) = 9.203283e-05
+[DEBUG] Factor k = emp_var / binom_var = 1.00
+[DEBUG] Recommended theoretical shots = 2500
+[DEBUG] Adjusted shots = ceil(k * N_recommended_theoretical) = 2500
+
+RESULTS FROM REPETITION 3:
+   └─ Critical state detected: 011 (p=0.4765)
+   └─ Correction factor k: 1.000
+   └─ Recommended theoretical shots: 2,500
+   └─ Noise-adjusted shots: 2,500
+   └─ Noise adjustment: +0 shots (+0.0%)
+
+OBSERVED PROBABILITIES (with hardware noise):
+    X 011: 0.4765 (47.65%)
+      100: 0.4753 (47.53%)
+      001: 0.0095 (0.95%)
+      000: 0.0092 (0.92%)
+      111: 0.0084 (0.84%)
+      101: 0.0072 (0.72%)
+      110: 0.0071 (0.71%)
+      010: 0.0070 (0.70%)
+
+INTERPRETATION:
+   └─ Minimal noise detected (k=1.00 ≈ 1.0)
+   └─ Theoretical shots are sufficient
+   └─ For error ≤ 1%, use 2,500 shots on real hardware
+
+==================================================
+REPETITION 4/5 - SHOT OPTIMISATION ANALYSIS
+==================================================
+[DEBUG] The circuit has 3 measurement gates
+
+[INFO] Theoretical probabilities (without noise):
+  011: 0.5000
+  100: 0.5000
+
+[INFO] Recommended theoretical shots (critical state) = 2500
+[DEBUG] Executing simulation with 50000 shots...
+[DEBUG] Obtained counts: 8 different states
+
+[INFO] Probabilities (noisy simulation):
+  000: 0.0101
+  001: 0.0083
+  010: 0.0069
+  011: 0.4797
+  100: 0.4736
+  101: 0.0065
+  110: 0.0072
+  111: 0.0077
+[INFO] Critical state: 011 with p ≈ 0.4797
+[INFO] Calculated block = 2496, m = 51
+
+[DEBUG] Selected critical state: 011 with p = 0.4797
+[DEBUG] Theoretical binomial variance (per block) = 9.999450e-05
+[DEBUG] Observed empirical variance (between blocks) = 1.109928e-04
+[DEBUG] Factor k = emp_var / binom_var = 1.11
+[DEBUG] Recommended theoretical shots = 2500
+[DEBUG] Adjusted shots = ceil(k * N_recommended_theoretical) = 2775
+
+RESULTS FROM REPETITION 4:
+   └─ Critical state detected: 011 (p=0.4797)
+   └─ Correction factor k: 1.110
+   └─ Recommended theoretical shots: 2,500
+   └─ Noise-adjusted shots: 2,775
+   └─ Noise adjustment: +275 shots (+11.0%)
+
+OBSERVED PROBABILITIES (with hardware noise):
+    X 011: 0.4797 (47.97%)
+      100: 0.4736 (47.36%)
+      000: 0.0101 (1.01%)
+      001: 0.0083 (0.83%)
+      111: 0.0077 (0.77%)
+      110: 0.0072 (0.72%)
+      010: 0.0069 (0.69%)
+      101: 0.0065 (0.65%)
+
+INTERPRETATION:
+   └─ Moderate impact of noise (k=1.11)
+   └─ Moderate adjustment: +11.0% shots
+   └─ For error ≤ 1%, use 2,775 shots on real hardware
+
+==================================================
+REPETITION 5/5 - SHOT OPTIMISATION ANALYSIS
+==================================================
+[DEBUG] The circuit has 3 measurement gates
+
+[INFO] Theoretical probabilities (without noise):
+  011: 0.5000
+  100: 0.5000
+
+[INFO] Recommended theoretical shots (critical state) = 2500
+[DEBUG] Executing simulation with 50000 shots...
+[DEBUG] Obtained counts: 8 different states
+
+[INFO] Probabilities (noisy simulation):
+  000: 0.0100
+  001: 0.0091
+  010: 0.0060
+  011: 0.4749
+  100: 0.4783
+  101: 0.0071
+  110: 0.0071
+  111: 0.0076
+[INFO] Critical state: 100 with p ≈ 0.4783
+[INFO] Calculated block = 2496, m = 51
+
+[DEBUG] Selected critical state: 100 with p = 0.4783
+[DEBUG] Theoretical binomial variance (per block) = 9.997195e-05
+[DEBUG] Observed empirical variance (between blocks) = 8.361355e-05
+[DEBUG] Factor k = emp_var / binom_var = 1.00
+[DEBUG] Recommended theoretical shots = 2500
+[DEBUG] Adjusted shots = ceil(k * N_recommended_theoretical) = 2500
+
+RESULTS FROM REPETITION 5:
+   └─ Critical state detected: 100 (p=0.4783)
+   └─ Correction factor k: 1.000
+   └─ Recommended theoretical shots: 2,500
+   └─ Noise-adjusted shots: 2,500
+   └─ Noise adjustment: +0 shots (+0.0%)
+
+OBSERVED PROBABILITIES (with hardware noise):
+    X 100: 0.4783 (47.83%)
+      011: 0.4749 (47.49%)
+      000: 0.0100 (1.00%)
+      001: 0.0091 (0.91%)
+      111: 0.0076 (0.76%)
+      110: 0.0071 (0.71%)
+      101: 0.0071 (0.71%)
+      010: 0.0060 (0.60%)
+
+INTERPRETATION:
+   └─ Minimal noise detected (k=1.00 ≈ 1.0)
+   └─ Theoretical shots are sufficient
+   └─ For error ≤ 1%, use 2,500 shots on real hardware
+
+============================================================
+STATISTICAL SUMMARY OF SHOT OPTIMISATION ANALYSIS
+============================================================
+Average theoretical shots: 2500 (min=2500, max=2500)
+Average adjusted shots: 2590 (min=2500, max=2775)
+Average factor k: 1.04 (std dev = 0.04)
+Improvement by adjustment: 3.6%
+============================================================
